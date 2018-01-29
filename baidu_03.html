@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" href="css/baidu_01.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/baiduIco.ico" />
+</head>
+<body>
+    <!--换肤区-->
+    <div id="skinPeeler" class="skinPeeler">
+        <div class="skinHeader">
+            <div class="skinHeaderCenter">
+                <ul class="skinHeader_left">
+                    <li>热门</li>
+                    <li>游戏</li>
+                    <li>卡通</li>
+                </ul>
+                <div id="skinHeader_right" class="skinHeader_right">
+                    <span>收起</span>
+                    <i></i>
+                </div>
+                <a class="DontUseSkin" href="#">不使用皮肤</a>
+            </div>
+
+        </div>
+        <div class="skinBody">
+            <ul class="skinCenter">
+                <li class="skinHot">
+                    <div id="skinHotLeft" class="skinPicLeft">
+                        <!--壁纸-->
+                        <div class="skinPicLeft_A">
+                            <div class="SP_big" onmouseover="showBG(this)" onmouseleave="hideBG()"  onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span SP_span_big"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()"onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()"onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()"onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                        </div>
+                        <div class="skinPicLeft_B">
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()"onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()"onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()"onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div class="SP_big" onmouseover="showBG(this)" onmouseleave="hideBG()"onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span SP_span_big"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()"onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()"onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skinPicRight">
+                        <div class="windowSkin">
+                            <div class="previewNav">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="previewCentent">
+                                <img src="" alt="">
+                                <i id="logopreviewhot"></i>
+                            </div>
+                        </div>
+                        <span class="windowSkinFont">背景皮肤效果预览</span>
+                    </div>
+                </li>
+                <li class="skinGame hide">
+                    <div id="skinGameLeft" class="skinPicLeft">
+                        <!--壁纸-->
+                        <div class="skinPicLeft_A">
+                            <div class="SP_big" onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span SP_span_big"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                        </div>
+                        <div class="skinPicLeft_B">
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div class="SP_big" onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span SP_span_big"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()" onclick="clickBG(this)">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skinPicRight">
+                        <div class="windowSkin">
+                            <div class="previewNav">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="previewCentent">
+                                <img src="" alt="">
+                                <i id="logopreviewGame"></i>
+                            </div>
+                        </div>
+                        <span class="windowSkinFont">背景皮肤效果预览</span>
+                    </div>
+                </li>
+                <li class="skinCatoon hide">
+                    <div id="skinCatoonLeft" class="skinPicLeft">
+                        <!--壁纸-->
+                        <div class="skinPicLeft_A">
+                            <div class="SP_big" onmouseover="showBG(this)" onmouseleave="hideBG()">
+                                <img src="">
+                                <span class="SP_span SP_span_big"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                        </div>
+                        <div class="skinPicLeft_B">
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div class="SP_big" onmouseover="showBG(this)" onmouseleave="hideBG()">
+                                <img src="">
+                                <span class="SP_span SP_span_big"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                            <div onmouseover="showBG(this)" onmouseleave="hideBG()">
+                                <img src="">
+                                <span class="SP_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skinPicRight">
+                        <div class="windowSkin">
+                            <div class="previewNav">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="previewCentent">
+                                <img src="" alt="">
+                                <i id="logopreviewCatoon"></i>
+                            </div>
+                        </div>
+                        <span class="windowSkinFont">背景皮肤效果预览</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--消息设置-->
+    <div id="msgSetting" class="msgSetting">
+        <div class="msgSet">
+            <span>您目前没有新消息</span>
+            <div class="clearMsgBtn">
+                <a href="#">清空消息</a>
+            </div>
+            <div class="MsgSetBtn">
+                <a href="https://www.baidu.com/home/page/show/pagesetting#msg_setting" target="_blank">消息设置</a>
+            </div>
+        </div>
+        <div class="trigonA"></div>
+    </div>
+    <!--置顶搜索-->
+    <div class="searchTop">
+        <div class="searchTopArea">
+            <div class="st_logo">
+                <img src="img/logo_top.png" alt="">
+            </div>
+            <div class="searchTopPlane">
+                <!--搜索-->
+                <form class="st_baidu_form" action="https://www.baidu.com/s" method="get" target="_blank" id="form02">
+                    <input class="st_input01" type="text" name="wd" >
+                    <input class="st_imageField" type="submit" value="百度一下">
+                </form>
+                <div class="st_CamerasArea">
+                    <img class="Cameras_gray" src="img/Cameras_gray.png" alt="">
+                    <img class="Cameras_blue" src="img/Cameras_blue.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <header>
+        <!--左-->
+        <div class="headerLeft">
+            <div class="weather">
+                <span id="city">杭州:</span>
+                <i></i>
+                <span>35℃</span>
+                <span id="weatherDescribe">优</span>
+                <span>44</span>
+            </div>
+            <div class="separator"></div>
+            <a  id="skinBtn" href="#" title="换肤">换肤</a>
+            <a id="msgBtn" href="#"  title="消息">消息</a>
+        </div>
+        <!--右-->
+        <div class="headerRight">
+            <div class="moreProductBtn" id="moreProductBtn">更多产品
+                <!--更多产品-->
+                <div id="moreProduct" class="more_ctl_child">
+                    <div class="more_icon" >
+                        <span class="more_font3" >更多产品</span>
+                    </div><hr class="hr_setting">
+
+                    <div class="more_icon" >
+                        <a href="http://www.nuomi.com/?cid=002540"><input type="image"  class="more_img" src="img/luomi.png"></a><br>
+                        <a class="more_font"  href="http://www.nuomi.com/?cid=002540">糯米</a>
+                    </div><hr class="hr_setting">
+
+                    <div class="more_icon" >
+                        <a href="http://music.baidu.com/"><input type="image" class="more_img" src="img/du.png"></a> <br>
+                        <a class="more_font"  href="http://music.baidu.com/">音乐</a>
+                    </div><hr class="hr_setting">
+
+                    <div class="more_icon" >
+                        <a href="http://image.baidu.com/"><input type="image" class="more_img" src="img/tu.png"></a> <br>
+                        <a class="more_font"  href="http://image.baidu.com/">图片</a>
+                    </div><hr class="hr_setting">
+
+                    <div class="more_icon"  >
+                        <a href="http://zhidao.baidu.com/"> <input type="image" class="more_img" src="img/question.png"></a><br>
+                        <a class="more_font"  href="http://zhidao.baidu.com/">知道</a>
+                    </div><hr class="hr_setting">
+
+                    <div class="more_icon"  >
+                        <a href="http://wenku.baidu.com/"><input type="image" class="more_img" src="img/wen.png"></a> <br>
+                        <a class="more_font"  href="http://wenku.baidu.com/">文库</a>
+                    </div><hr class="hr_setting">
+
+                    <div class="more_icon"  >
+                        <a href="http://top.baidu.com/"><input type="image" class="more_img" src="img/data.png"></a> <br>
+                        <a class="more_font"  href="http://top.baidu.com/">风云榜</a>
+                    </div><hr class="hr_setting">
+
+                    <div class="more_icon"  >
+                        <a  class="more_font2"  href="https://www.baidu.com/more/">全部产品>></a>
+                    </div>
+                    <div class="moreTableLine"></div>
+                </div>
+            </div>
+            <ul class="headerList">
+                <li>
+                    <a href="http://news.baidu.com/" target="_blank">新闻</a>
+                </li>
+                <li>
+                    <a href="http://www.hao123.com/" target="_blank">hao123</a>
+                </li>
+                <li>
+                    <a href="http://map.baidu.com/" target="_blank">地图</a>
+                </li>
+                <li>
+                    <a href="http://v.baidu.com/" target="_blank">视频</a>
+                </li>
+                <li>
+                    <a href="http://tieba.baidu.com/" target="_blank">贴吧</a>
+                </li>
+                <li>
+                    <a href="http://xues
+                    hu.baidu.com/" target="_blank">学术</a>
+                </li>
+                <li class="account">
+                    <a class="headerFontSpecial" href="http://i.baidu.com/" target="_blank">max15914250110</a>
+                    <div class="account_child" >
+                        <div class="square_div">
+                            <img class="square" src="img/menu.png">
+                        </div>
+                        <div class="account_div" id="account_div">
+                            <a class="account_div_a" href="http://i.baidu.com/center">个人中心</a>
+                            <a class="account_div_a" href="http://passport.baidu.com/">账号设置</a>
+                            <a class="account_div_a" href="https://www.baidu.com/?tn=18029102_5_oem_dg#">意见反馈</a>
+                            <a class="account_div_a" href="https://www.baidu.com/?tn=18029102_5_oem_dg#">退出</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="setting_parent">
+                    <a class="headerFontSpecial" href="http://www.baidu.com/gaoji/preferences.html" target="_blank">设置</a>
+                    <div class="setting_child" >
+                        <div class="square_div">
+                            <img class="square" src="img/menu.png">
+                        </div>
+                        <div class="table_div" id="table_div">
+                            <a class="table_div_a" href="javascript:;">搜索设置</a>
+                            <a class="table_div_a" href="javascript:;">高级搜索</a>
+                            <a class="table_div_a" href="javascript:;">开始预测</a>
+                            <a class="table_div_a" href="javascript:;">搜索历史</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="wrapper">
+        <!--搜索-->
+        <div class="searchArea">
+            <!--logo-->
+            <div class="logoArea">
+                <img src="img/logo.png" alt="百度一下，你就知道"  title="百度一下，你就知道">
+            </div>
+            <!--搜索-->
+            <form class="baidu_form" action="https://www.baidu.com/s" method="get" target="_blank" id="form01">
+                <input class="input01" type="text" name="wd" >
+                <input class="imageField" type="submit" value="百度一下">
+            </form>
+            <div class="CamerasArea">
+                <img class="Cameras_gray" src="img/Cameras_gray.png" alt="">
+                <img class="Cameras_blue" src="img/Cameras_blue.png" alt="">
+            </div>
+        </div>
+        <!--主内容-->
+        <div class='main'>
+            <!--主内容-->
+            <div class="contentOut">
+                <div class="contentIn">
+                    <ul class="contentHead">
+                        <li>
+                            <i class="myAttentionIcon"></i>
+                            <a class="myAttentionFont" href="#">我的关注</a>
+                        </li>
+                        <li>推荐</li>
+                        <li>导航</li>
+                        <li>视频</li>
+                        <i class="content_setting"></i>
+                    </ul>
+                    <ul class="content">
+                        <li class="myFocus">
+                            <div class="myFocus">
+                                <div class="myNav">
+                                    <div class="myNavText">
+                                        <span class="mayNavTriangle">
+                                            <em></em>
+                                        </span>
+                                        <span class="myNavTextFont">我的导航</span>
+                                        <span class="myNavNum">(0)</span>
+                                    </div>
+                                    <div class="myNavContent">
+                                        <span>您还没有关注任何网址，赶快添加吧！</span>
+                                    </div>
+                                </div>
+                                <div class="myVideo">
+                                    <div class="myVideoText">
+                                        <span class="myVideoTriangle">
+                                            <em></em>
+                                        </span>
+                                        <span class="myVideoTextFont">我的视频</span>
+                                        <span class="myVideoNum">(0)</span>
+                                    </div>
+                                    <div class="myVideoContent">
+                                        <span>您还没有关注任何视频，赶快去视频频道添加吧！</span>
+                                    </div>
+                                </div>
+                                <div class="myCustom"></div>
+                            </div>
+                        </li>
+                        <li class="recommend">
+                            <div class="recommendArea">
+                                <div class="recommendArea_head">
+                                    <div class="line_left"></div>
+                                    <div class="tips-content">
+                                        <i></i>
+                                        <span>以下信息根据您的兴趣推荐</span>
+                                    </div>
+                                    <div class="line_right"></div>
+                                </div>
+                                <div id="recommendArea_bodyL" class="recommendArea_bodyL">
+                                </div>
+                                <div class="recommendArea_bodyR">
+                                    <div  class="RBR_positon01">
+                                        <div class="RBR_positon02">
+                                            <div class="RBR_content">
+                                                <span class="realTimeHotPoint">实时热点</span>
+                                                <span id="uploadNews" class="changeNewsTitle">换一换</span>
+                                            </div>
+                                            <ul id="newsLists" class="news_list">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navigation hide">
+                            <div class="navigationArea">
+                                <div class="nav_A">
+                                    <h1 class="nav_Title">猜你喜欢</h1>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="http://www.nuomi.com/?vip_frm=super_nav_vip" title="百度糯米">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/9483.png" alt="百度糯米">
+                                            <span class="nav_item_span">百度糯米</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="http://www.jd.com/?vip_frm=super_nav_vip" title="京东商城">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/95541.png" alt="京东商城">
+                                            <span class="nav_item_span">京东商城</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="http://www.yhd.com/?vip_frm=super_nav_vip" title="1号店">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/95780.png" alt="1号店">
+                                            <span class="nav_item_span">1号店</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="http://www.suning.com/?vip_frm=super_nav_vip" title="苏宁易购">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/95537.png" alt="苏宁易购">
+                                            <span class="nav_item_span">苏宁易购</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="http://www.vip.com/?vip_frm=super_nav_vip" title="唯品会">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/95693.png" alt="唯品会">
+                                            <span class="nav_item_span">唯品会</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="当当网">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/95517.png" alt="当当网">
+                                            <span class="nav_item_span">当当网</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="QQ邮箱">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/95519.png" alt="QQ邮箱">
+                                            <span class="nav_item_span">QQ邮箱</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="淘宝网">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/95487.png" alt="淘宝网">
+                                            <span class="nav_item_span">淘宝网</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="优酷网">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/95489.png" alt="优酷网">
+                                            <span class="nav_item_span">优酷网</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="淘宝">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/10062.png" alt="淘宝">
+                                            <span class="nav_item_span">淘宝</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="CG共和国">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/6000.png" alt="CG共和国">
+                                            <span class="nav_item_span">CG共和国</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="花瓣网">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/95742.png" alt="花瓣网">
+                                            <span class="nav_item_span">花瓣网</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="百度地图">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/95561.png" alt="百度地图">
+                                            <span class="nav_item_span">百度地图</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="昵图网">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/9447.png" alt="昵图网">
+                                            <span class="nav_item_span">昵图网</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/95524.png" alt="百度翻译">
+                                            <span class="nav_item_span">百度翻译</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="欧莱凯酷站">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/83841.png" alt="欧莱凯酷站">
+                                            <span class="nav_item_span">欧莱凯酷站</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="站酷">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/95636.png" alt="站酷">
+                                            <span class="nav_item_span">站酷</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="IDG中国">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/6000.png" alt="IDG中国">
+                                            <span class="nav_item_span">IDG中国</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="居然之家">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/6000.png" alt="居然之家">
+                                            <span class="nav_item_span">居然之家</span>
+                                        </a>
+                                    </div>
+                                    <div class="nav_item">
+                                        <a class="nav_item_a" href="" title="红杉资本">
+                                            <img class="nav_item_icon" src="img/nav/guessLike/6000.png" alt="红杉资本">
+                                            <span class="nav_item_span">红杉资本</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li id="video" class="video hide">
+                            <div class="videoArea">
+                                <div class="video_item">
+                                    <div class="v_item_div01">
+                                        <a class="v_item_div01_a" href="http://vip.iqiyi.com/20110916/e406c9a294aacf9f.html?vfm=2008_aldbd&fc=828fb30b722f3164&fv=p_02_01" target="_blank">
+                                            <img class="v_item_div01_img" src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3364563209,1173354662&fm=58" alt="第三类接触">
+                                        </a>
+                                        <i class="v_item_movie"></i>
+                                        <i class="v_item_movie_sel">
+                                            <i class="moiveDel" title="不感兴趣"></i>
+                                            <i class="moiveConcern" title="添加关注"></i>
+                                        </i>
+                                        <div class="v_item_lineColor">
+                                            <span class="v_item_time">132:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="v_item_div02">
+                                        <div class="v_item_div02_text">
+                                            <a class="v_item_div02_text_a" href="http://vip.iqiyi.com/20110916/e406c9a294aacf9f.html?vfm=2008_aldbd&fc=828fb30b722f3164&fv=p_02_01">第三类接触</a>
+                                        </div>
+                                        <div class="v_item_div02_star">
+                                            <span class="v_item_div02_star_span_Parent">
+                                                <span class="v_item_div02_star_span_Chirdren"></span>
+                                            </span>
+                                            <span>7.2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="video_item">
+                                    <div class="v_item_div01">
+                                        <a class="v_item_div01_a" href="http://www.iqiyi.com/v_19rrkbqj9o.html?vfm=2008_aldbd">
+                                            <img class="v_item_div01_img" src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3368496371,1280386024&fm=58" alt="夏洛特烦恼">
+                                        </a>
+                                        <i class="v_item_movie"></i>
+                                        <i class="v_item_movie_sel">
+                                            <i class="moiveDel" title="不感兴趣"></i>
+                                            <i class="moiveConcern" title="添加关注"></i>
+                                        </i>
+                                        <div class="v_item_lineColor">
+                                            <span class="v_item_time">99:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="v_item_div02">
+                                        <div class="v_item_div02_text">
+                                            <a class="v_item_div02_text_a" href="http://www.iqiyi.com/v_19rrkbqj9o.html?vfm=2008_aldbd">夏洛特烦恼</a>
+                                        </div>
+                                        <div class="v_item_div02_star">
+                                            <span class="v_item_div02_star_span_Parent">
+                                                <span class="v_item_div02_star_span_Chirdren"></span>
+                                            </span>
+                                            <span>7.4</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="video_item">
+                                    <div class="v_item_C">
+                                        <div class="v_item_C_up">
+                                            <a class="v_item_C_img" href="http://www.iqiyi.com/v_19rr7neiyg.html?vfm=f_109_bdxs" target="_blank">
+                                                <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1943650923,3901542617&fm=58">
+                                                <i class="v_item_movie_sel">
+                                                    <i class="moiveDel" title="不感兴趣"></i>
+                                                    <i class="moiveConcern" title="添加关注"></i>
+                                                </i>
+                                                <div class="v_item_lineColor">
+                                                    <span class="v_item_time">03:16</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="v_item_C_down">
+                                            <div class="v_item_C_downArae">
+                                                <a class="v_item_C_downArae_a" href="http://www.iqiyi.com/v_19rr7neiyg.html?vfm=f_109_bdxs" target="_blank">长腿美女们花式秀马术 不料惨被摔出翔</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div  class="v_item_C">
+                                        <div class="v_item_C_up">
+                                            <a class="v_item_C_img" href="http://www.iqiyi.com/v_19rr7ndv68.html?vfm=f_109_bdxs" target="_blank">
+                                                <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1495784336,3262592351&fm=58">
+                                                <i class="v_item_movie_sel">
+                                                    <i class="moiveDel" title="不感兴趣"></i>
+                                                    <i class="moiveConcern" title="添加关注"></i>
+                                                </i>
+                                                <div class="v_item_lineColor">
+                                                    <span class="v_item_time">01:20</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="v_item_C_down">
+                                            <div class="v_item_C_downArae">
+                                                <a class="v_item_C_downArae_a" href="http://www.iqiyi.com/v_19rr7ndv68.html?vfm=f_109_bdxs" target="_blank">安徽现最牛货车 狂顶执法车百多米逃逸</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="video_item">
+                                    <div class="v_item_C">
+                                        <div class="v_item_C_up">
+                                            <a class="v_item_C_img" href="http://www.iqiyi.com/v_19rr7ndvqc.html?vfm=f_109_bdxs" target="_blank">
+                                                <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2551603902,16853710&fm=58">
+                                                <i class="v_item_movie_sel">
+                                                    <i class="moiveDel" title="不感兴趣"></i>
+                                                    <i class="moiveConcern" title="添加关注"></i>
+                                                </i>
+                                                <div class="v_item_lineColor">
+                                                    <span class="v_item_time">01:0</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="v_item_C_down">
+                                            <div class="v_item_C_downArae">
+                                                <a class="v_item_C_downArae_a" href="http://www.iqiyi.com/v_19rr7ndvqc.html?vfm=f_109_bdxs" target="_blank">拉沙货车侧翻埋住两镇长 副镇长因公殉职</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div  class="v_item_C">
+                                        <div class="v_item_C_up">
+                                            <a class="v_item_C_img" href="http://www.iqiyi.com/v_19rr7ndi88.html?vfm=f_109_bdxs" target="_blank">
+                                                <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=635712183,2842954907&fm=58">
+                                                <i class="v_item_movie_sel">
+                                                    <i class="moiveDel" title="不感兴趣"></i>
+                                                    <i class="moiveConcern" title="添加关注"></i>
+                                                </i>
+                                                <div class="v_item_lineColor">
+                                                    <span class="v_item_time">03:25</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="v_item_C_down">
+                                            <div class="v_item_C_downArae">
+                                                <a class="v_item_C_downArae_a" href="http://www.iqiyi.com/v_19rr7ndi88.html?vfm=f_109_bdxs" target="_blank">笑囧一族608：笑尿了！大妈作死整蛊美女</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content_setting_plane">
+                            <div class="CSP_area">
+                                <div class="CSP_main">
+                                    <div class="CSP_left">
+                                        <h3>已订阅频道</h3>
+                                        <div class="CSP_myFocus">我的关注</div>
+                                        <div class="CSPL_body CSP">
+                                            <div class="CSP_leftli" id="CSP_recommend">推荐</div>
+                                            <div class="CSP_leftli" id="CSP_nav">导航</div>
+                                            <div class="CSP_leftli" id="CSP_video">视频</div>
+                                        </div>
+                                    </div>
+                                    <div class="CSP_right">
+                                        <h3>未订阅频道</h3>
+                                        <div class="CSPR_body CSP">
+                                            <div class="CSP_rightli" id="CSP_music">音乐</div>
+                                            <div class="CSP_rightli" id="CSP_sports">体育</div>
+                                            <div class="CSP_rightli" id="CSP_fiction">小说</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="CSP_foot">
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="contentFoot">
+                        <div class="more_bar">
+                            <div class="loadText">滚动查看更多</div>
+                            <span class="rect">∨</span>
+                        </div>
+                    </div>
+                    <!--回到顶栏-->
+                    <div class="goTop01">
+                        <div id="goTop02" class="goTop02">
+                            <span class="goTopIcon">^</span>
+                            <a id="goTopBtn" class="goTopBtn" href="javascript:;">回到顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--底部-->
+        <div class="foot">
+            <p class="foot_fist">
+                <a href="https://www.baidu.com/cache/sethelp/index.html" target="_blank">设为首页</a>
+                <span>©2017 Baidu</span>
+                <a href="https://www.baidu.com/duty/" target="_blank">使用百度前必读</a>
+                <span>亰ICP证030173号</span>
+                <i></i>
+            </p>
+            <p class="foot_second">
+                <i></i>
+                <a href="https://www.baidu.com/duty/">亰公安网备11000002000001号</a>
+            </p>
+        </div>
+        <!--音乐-->
+        <div>
+
+        </div>
+
+
+    </div>
+    <img id="BG" src="" alt="">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ddsort.min.js"></script>
+    <script type="text/javascript" src="js/baidu_03.js"></script>
+
+</body>
+</html>
